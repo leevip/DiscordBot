@@ -19,6 +19,9 @@ async def game(ctx,gameseek):
 
 @client.event
 async def on_ready():
-    print('Online')
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
 
 client.run('NTE2MjM5NTc4MzQ5NDM2OTQx.DtwxrQ.VsVjJVTb3--moqp0c8S5u8mr3NE')
