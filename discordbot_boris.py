@@ -1,3 +1,4 @@
+#! python3
 #Made by Leevi Pussinen
 from discord.ext.commands import Bot
 from discord import Server, Game
