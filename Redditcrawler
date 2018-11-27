@@ -28,6 +28,7 @@ def redditpost():
 			topics_dict["comms_num"].append(submission.num_comments)
 			topics_dict["created"].append(submission.created)
 			topics_dict["body"].append(submission.selftext)
+			topics_data = pd.DataFrame(topics_dict)
+			topics_data.to_csv('FILENAME.csv', index=False) 
+
 redditpost()
-topics_data = pd.DataFrame(topics_dict)
-topics_data.to_csv('FILENAME.csv', index=False) 
